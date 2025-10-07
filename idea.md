@@ -14,7 +14,7 @@ The goal is to help students seek career guidance, internship opportunities, and
 - Sign Up / Login for students and alumni  
 - Email verification  
 - Profile management (Name, College, Degree, Graduation Year, Work Experience, Skills, Achievements, Profile Picture)  
-- Privacy settings for posts and connections  
+- Privacy settings for posts and connections 
 
 ### 2. Home Feed (Like Twitter/LinkedIn)
 - Create and view posts with text, images, and links  
@@ -28,23 +28,20 @@ The goal is to help students seek career guidance, internship opportunities, and
 ### 4. Circles (Groups)
 - Create and join circles (e.g., department, batch, or interest-based)  
 - Post and comment within circles  
-- Optional: group chat using WebSockets  
 - Membership and join-request management  
 
 ### 5. Notifications
 - Event-driven notifications for:
   - Connection requests  
   - Likes/comments on posts  
-  - Circle invites/messages  
+  - Circle invites
 
 ### 6. Profile Page
 - Display personal and professional information  
 - Show user’s posts, connections, and circles  
-- Activity feed summarizing engagement  
 
-### 7. Admin Panel (Optional)
+### 7. Admin Panel
 - Manage users, circles, and reported posts  
-- View engagement analytics  
 
 ---
 
@@ -52,7 +49,7 @@ The goal is to help students seek career guidance, internship opportunities, and
 
 | Role | Permissions |
 |------|--------------|
-| **Student** | Create profile, connect with alumni, post content, join circles, and chat with peers |
+| **Student** | Create profile, connect with alumni, post content and join circles|
 | **Alumni** | All student permissions, plus create mentorship circles and guide students |
 | **Admin** | Manage users, moderate posts, oversee circles, and handle reports |
 
@@ -63,14 +60,14 @@ The goal is to help students seek career guidance, internship opportunities, and
 - Login / Register Page  
 - Home Feed Page  
 - Profile Page  
-- Connections / Chat Page  
+- Connections
 - Circles Page  
 - Notifications Page  
-- Admin Dashboard (optional)  
+- Admin Dashboard
 
 ---
 
-## 5. Database Schema (Rough Draft)
+## 5. Database Schema
 
 ### Users
 - user_id (PK)  
@@ -150,18 +147,17 @@ The goal is to help students seek career guidance, internship opportunities, and
 ## 6. Tech Stack (Tentative)
 - **Frontend:** React.js, Redux (optional)  
 - **Backend:** Node.js, Express.js  
-- **Database:** SQL (PostgreSQL/MySQL)  
-- **Real-time Communication:** WebSockets (Socket.io)  
+- **Database:** PostgreSQL/MongoDB/MySQL
 - **Authentication:** JWT, bcrypt  
 - **Hosting/Deployment:** Vercel/Heroku for frontend, AWS/Heroku for backend  
 
 ---
 
-## 7. Workflow (Optional)
+## 7. Workflow
 1. User registers as a student or alumni and logs in.  
 2. Sets up profile and explores the feed.  
 3. Users post, like, comment, and follow others.  
-4. Students can connect and chat with alumni in real time.  
+4. Students can connect and chat with alumni.  
 5. Users can create or join circles to discuss specific topics.  
 6. Admin moderates posts and manages reported content.  
 
@@ -169,8 +165,8 @@ The goal is to help students seek career guidance, internship opportunities, and
 
 ## 8. Expected Outcomes
 - A fully functional full-stack web application connecting students and alumni.  
-- Core features: authentication, profile management, posting, connections, and chat.  
-- Optional features: admin panel and real-time notifications.  
+- Core features: authentication, profile management, posting, connections.  
+- Optional features: admin panel and notifications.
 - Final deployment accessible online via Vercel/Heroku.  
 
 ---
