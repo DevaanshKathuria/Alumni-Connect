@@ -15,11 +15,4 @@ app.use(express.json());
 app.post('/api/auth/signup', signup);
 app.post('/api/auth/signin', signin);
 
-const port = process.env.PORT || 3000;
-
-app.listen(port, () => {
-    console.log(`Server is running on port ${port}`);
-});
-
-
-module.exports = { app, prisma };
+module.exports = app;
