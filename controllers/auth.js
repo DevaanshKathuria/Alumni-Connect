@@ -1,10 +1,9 @@
 const bcrypt = require('bcryptjs');
-const { PrismaClient } = require('@prisma/client');
-const generateToken = require('../utils/generateToken');
+const { PrismaClient } = require('@prisma/client/edge');
 const { withAccelerate } = require('@prisma/extension-accelerate');
+const generateToken = require('../utils/generateToken');
 
-const prisma = new PrismaClient().$extends(withAccelerate())
-
+const prisma = new PrismaClient().$extends(withAccelerate());
 
 const signup = async (req, res) => {
     const { name, email, password } = req.body;
