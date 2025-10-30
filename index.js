@@ -12,20 +12,14 @@ const prisma = new PrismaClient().$extends(withAccelerate())
 
 app.use(express.json());
 
-app.get('/', (req, res) => {
-    res.json({ message: 'Alumni Connect API is running!' });
-});
-
 app.post('/api/auth/signup', signup);
 app.post('/api/auth/signin', signin);
 
-// Export for Vercel serverless
-module.exports = app;
+const port = process.env.PORT || 3000;
 
-// Only listen locally (not on Vercel)
-if (process.env.NODE_ENV !== 'production') {
-    const port = process.env.PORT || 3000;
-    app.listen(port, () => {
-        console.log(`Server is running on port ${port}`);
-    });
-}
+app.listen(port, () => {
+    console.log(`Server is running on port ${port}`);
+});
+
+
+module.exports = { app, prisma };
