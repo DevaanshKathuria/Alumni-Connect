@@ -1,14 +1,16 @@
 const express = require('express');
-const { PrismaClient } = require('@prisma/client');
+const { PrismaClient } = require('@prisma/client/edge');
 const dotenv = require('dotenv');
 const { signup, signin } = require('./controllers/auth');
+const { withAccelerate } = require('@prisma/extension-accelerate');
+
 
 
 dotenv.config();
 
 const app = express();
 
-const prisma = new PrismaClient();
+const prisma = new PrismaClient().$extends(withAccelerate())
 
 app.use(express.json());
 
