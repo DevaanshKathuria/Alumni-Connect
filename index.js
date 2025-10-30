@@ -4,8 +4,6 @@ const dotenv = require('dotenv');
 const { signup, signin } = require('./controllers/auth');
 const { withAccelerate } = require('@prisma/extension-accelerate');
 
-
-
 dotenv.config();
 
 const app = express();
@@ -13,6 +11,10 @@ const app = express();
 const prisma = new PrismaClient().$extends(withAccelerate())
 
 app.use(express.json());
+
+app.get('/', (req, res) => {
+    res.json({ message: 'Alumni Connect API is running!' });
+});
 
 app.post('/api/auth/signup', signup);
 app.post('/api/auth/signin', signin);
