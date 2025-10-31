@@ -1,7 +1,7 @@
 # GradNet
 
 ## 1. Project Title & Overview
-**App Name:** GradNet
+**App Name:** GradNet  
 **Purpose:** A platform designed to connect college students with alumni for networking, mentorship, and discussions.  
 
 The goal is to help students seek career guidance, internship opportunities, and professional advice, while also enabling alumni to stay engaged with their alumni community.
