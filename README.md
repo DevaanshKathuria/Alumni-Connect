@@ -1,1 +1,1 @@
-# Alumni-Connect
+# GradNet
