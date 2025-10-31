@@ -1,10 +1,10 @@
 # GradNet
 
 ## 1. Project Title & Overview
-**App Name:** Alumni Connect  
+**App Name:** GradNet
 **Purpose:** A platform designed to connect college students with alumni for networking, mentorship, and discussions.  
 
-The goal is to help students seek career guidance, internship opportunities, and professional advice, while alumni can stay engaged with their alma mater community.
+The goal is to help students seek career guidance, internship opportunities, and professional advice, while also enabling alumni to stay engaged with their alumni community.
 
 ---
 
@@ -38,7 +38,7 @@ The goal is to help students seek career guidance, internship opportunities, and
 
 ### 6. Profile Page
 - Display personal and professional information  
-- Show user’s posts, connections, and circles  
+- Show the user’s posts, connections, and circles  
 
 ### 7. Admin Panel
 - Manage users, circles, and reported posts  
@@ -49,7 +49,7 @@ The goal is to help students seek career guidance, internship opportunities, and
 
 | Role | Permissions |
 |------|--------------|
-| **Student** | Create profile, connect with alumni, post content and join circles|
+| **Student** | Create profile, connect with alumni, post content, and join circles|
 | **Alumni** | All student permissions, plus create mentorship circles and guide students |
 | **Admin** | Manage users, moderate posts, oversee circles, and handle reports |
 
@@ -154,7 +154,7 @@ The goal is to help students seek career guidance, internship opportunities, and
 ---
 
 ## 7. Workflow
-1. User registers as a student or alumni and logs in.  
+1. User registers as a student or alumnus and logs in.  
 2. Sets up profile and explores the feed.  
 3. Users post, like, comment, and follow others.  
 4. Students can connect and chat with alumni.  
