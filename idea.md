@@ -1,4 +1,4 @@
-# Alumni Connect
+# GradNet
 
 ## 1. Project Title & Overview
 **App Name:** Alumni Connect  
